@@ -16,6 +16,7 @@ Dashboard monitoring IoT menggunakan ESP8266, sensor suhu & kelembapan (DHT22 ds
 
 ## Alur Sistem
 
+```text
 ESP8266
    |
    | Suhu, kelembapan, jarak
@@ -32,6 +33,7 @@ index.php
    +-- Status sensor
    +-- Grafik
    +-- Last Update
+```
 
 ## Struktur Project
 
