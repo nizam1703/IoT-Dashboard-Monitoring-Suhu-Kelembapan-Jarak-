@@ -14,6 +14,25 @@ Dashboard monitoring IoT menggunakan ESP8266, sensor suhu & kelembapan (DHT22 ds
 - Penyimpanan data menggunakan MySQL
 - Notifikasi Fonnte
 
+## Alur Sistem
+
+ESP8266
+   |
+   | Suhu, kelembapan, jarak
+   v
+simpan_data.php
+   |
+   v
+MySQL
+   |
+   v
+index.php
+   |
+   +-- Nilai sensor terbaru
+   +-- Status sensor
+   +-- Grafik
+   +-- Last Update
+
 ## Struktur Project
 
 ```text
