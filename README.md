@@ -37,7 +37,6 @@ index.php
 
 ```text
 iot-dashboard/
-├── config.php              # File lokal, TIDAK di-upload ke GitHub
 ├── config.example.php      # Template konfigurasi yang di-upload
 ├── esp8266.cpp
 ├── index.php
@@ -45,8 +44,6 @@ iot-dashboard/
 ├── .gitignore
 └── README.md
 ```
-
-> `config.php` tetap digunakan seperti biasa di komputer lokal dan berisi token Fonnte. File ini sengaja tidak di-upload ke GitHub.
 
 ## 1. Persiapan
 
@@ -77,11 +74,11 @@ iot
 Buat tabel `sensor` dengan field:
 
 ```text
-id
-suhu
-kelembapan
-jarak
-waktu
+id (pk)
+suhu (float)
+kelembapan (float)
+jarak (float)
+waktu (DateTime)
 ```
 
 Konfigurasi database disimpan di `config.php`.
